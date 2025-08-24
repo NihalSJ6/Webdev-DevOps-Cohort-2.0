@@ -6,19 +6,19 @@ const app = express();
 
 const ALL_USERS = [
   {
-    username: "harkirat@gmail.com",
+    username: "nihal@gmail.com",
     password: "123",
-    name: "harkirat singh",
+    name: "Nihal",
   },
   {
-    username: "raman@gmail.com",
+    username: "aneesh@gmail.com",
     password: "123321",
-    name: "Raman singh",
+    name: "Aneesh",
   },
   {
-    username: "priya@gmail.com",
+    username: "knapsr@gmail.com",
     password: "123321",
-    name: "Priya kumari",
+    name: "knapsr",
   },
 ];
 
@@ -56,4 +56,9 @@ app.get("/users", function (req, res) {
   }
 });
 
-app.listen(3000)
+
+
+// Start server
+app.listen(port, () => {
+    console.log(`✅ Server running on http://localhost:${port}`);
+});
